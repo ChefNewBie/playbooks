@@ -1,0 +1,9 @@
+---
+  - name: configure the motd
+    import_tasks: deploy_motd.yml
+  - name: install nagios
+    import_tasks: deploy_nagios.yml
+  - name: nagios in /etc/hosts
+    import_tasks: update_hosts.yml
+  - name: nagios in /etc/hosts
+    import_tasks: deploy_sshkeys.yml
